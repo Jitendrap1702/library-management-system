@@ -1,0 +1,42 @@
+{
+    "users" : [
+        {
+            "id": "1",
+            "name": "Jitendra Patel",
+            "email": "jitendrap1702@gmail.com",
+            "issuedBook": "1",
+            "issuedDate": "2023-10-01",
+            "returnDate": "2023-10-15",
+            "subscriptionType": "Premium",
+            "subscriptionDate": "2023-09-01"
+        },
+        {
+            "id": "2",
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "issuedBook": "2",
+            "issuedDate": "2023-10-05",
+            "returnDate": "2023-10-20",
+            "subscriptionType": "Basic",
+            "subscriptionDate": "2023-09-15"
+        },
+        {
+            "id": "3",
+            "name": "Jane Smith",
+            "email": "janesmith@gmail.com",
+            "issuedBook": "3",
+            "issuedDate": "2023-10-10",
+            "returnDate": "2023-10-25",
+            "subscriptionType": "Standard",
+            "subscriptionDate": "2023-09-20"
+        },
+        {
+            "id": "4",
+            "name": "Alice Johnson",
+            "email": "alice123@gmail.com",
+            "subscriptionType": "Premium",
+            "subscriptionDate": "2023-09-05"
+        }
+    ]
+
+}
