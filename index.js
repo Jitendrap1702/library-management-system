@@ -1,5 +1,8 @@
 const express = require('express');
 
+const usersRouter = require('./routes/users');
+const booksRouter = require('./routes/books');
+
 const app = express();
 
 app.use(express.json());
@@ -11,6 +14,9 @@ app.get('/', (req, res) => {
         message : 'HOME PAGE: Welcome to the Library Management System'
     });
 });
+
+app.use('/users', usersRouter);
+app.use('/books', booksRouter);
 
 // app.all('*', (req, res) => {
 //     res.status(500).json({
