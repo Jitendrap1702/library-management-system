@@ -220,25 +220,5 @@ router.get('/subscription-details/:id', (req, res) => {
     }
 });
 
-// Helper function to calculate the subscription expiry date based on the subscription type and subscription date
-function calculateSubscriptionExpiryDate(subscriptionType, subscriptionDate){
-    const date = new Date(subscriptionDate);
-    switch(subscriptionType){
-        case 'Basic':
-            // Adding 1 month to the subscription date for Basic subscription type
-            date.setMonth(date.getMonth() + 1);
-            break;
-        case 'Standard':
-            date.setMonth(date.getMonth() + 6);
-            break;
-        case 'Premium':
-            date.setFullYear(date.getFullYear() + 1);
-            break;
-        default:
-            return null;
-    }
-    return date.toISOString().split('T')[0];
-}
-
 // Exporting the router object to be used in other parts of the application
 module.exports = router;
